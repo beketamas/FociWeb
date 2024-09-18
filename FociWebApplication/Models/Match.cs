@@ -17,13 +17,13 @@ namespace FociWebApplication.Models
 
         public Match(string[] tomb)
         {
-            this.fordulo = int.Parse(tomb[0]);
-            this.hazaGolok = int.Parse(tomb[1]);
-            this.vendegGolok = int.Parse(tomb[2]);
-            this.hazaiElsoFelidoGolok = int.Parse(tomb[3]);
+            fordulo = int.Parse(tomb[0]);
+            hazaGolok = int.Parse(tomb[1]);
+            vendegGolok = int.Parse(tomb[2]);
+            hazaiElsoFelidoGolok = int.Parse(tomb[3]);
             this.vendegElsoFelidoGolok = int.Parse(tomb[4]);
-            this.hazaiCsapat = tomb[5];
-            this.vendegCsapat = tomb[6];
+            hazaiCsapat = tomb[5];
+            vendegCsapat = tomb[6];
         }
         public Match()
         {
