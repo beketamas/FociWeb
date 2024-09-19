@@ -1,0 +1,78 @@
+﻿@page
+@model FociWebApplication.Pages.MerkozesListaModel
+
+@{
+    ViewData["Title"] = "MerkozesLista";
+}
+
+<h1>MerkozesLista</h1>
+
+<p>
+    <a asp-page="UjMerkozesFelvetele">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Match[0].Fordulo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Match[0].HazaGolok)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Match[0].VendegGolok)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Match[0].HazaiElsoFelidoGolok)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Match[0].VendegElsoFelidoGolok)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Match[0].HazaiCsapat)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Match[0].VendegCsapat)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Match[0].VegEredmeny1)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Match) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Fordulo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HazaGolok)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VendegGolok)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HazaiElsoFelidoGolok)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VendegElsoFelidoGolok)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HazaiCsapat)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VendegCsapat)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VegEredmeny1)
+            </td>
+            <td>
+                <a asp-page="./MerkozesEdit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-page="./MerkozesDetalis" asp-route-id="@item.Id">Details</a> |
+                <a asp-page="./MerkozesDelete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
