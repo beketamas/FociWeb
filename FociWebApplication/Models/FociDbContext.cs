@@ -10,7 +10,7 @@ namespace FociWebApplication.Models
         }
 
 
-        public DbSet<Match> Meccsek { get; set; }
+        public DbSet<Meccs> Meccsek { get; set; }
 
     }
 }

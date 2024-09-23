@@ -7,9 +7,9 @@ namespace FociWebApplication.Pages
     public class UjMeccsFelveteleModel : PageModel
     {
         [BindProperty]
-        public Match UjMeccs { get; set; }
+        public Meccs UjMeccs { get; set; }
 
-        public List<Match> MeccsekListaja { get; set; }
+        public List<Meccs> MeccsekListaja { get; set; }
 
         private readonly FociDbContext _db;
         public UjMeccsFelveteleModel(FociDbContext db)

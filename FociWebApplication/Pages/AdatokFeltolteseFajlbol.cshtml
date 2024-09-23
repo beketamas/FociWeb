@@ -1,0 +1,11 @@
+﻿@page
+@model FociWebApplication.Pages.AdatokFeltolteseFajlbolModel
+@{
+    ViewData["Title"] = "Adatok Feltoltese Fajlbol";
+}
+
+<form method="post" en enctype="multipart/form-data">
+    <label asp-for="Feltoltes"></label>
+    <input asp-for="Feltoltes" type="file" />
+    <input type="submit" value="Feltoltes" />
+</form>

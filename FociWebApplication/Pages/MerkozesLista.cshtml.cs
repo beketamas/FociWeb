@@ -18,7 +18,7 @@ namespace FociWebApplication.Pages
             _context = context;
         }
 
-        public IList<Match> Match { get;set; } = default!;
+        public IList<Meccs> Match { get;set; } = default!;
 
         public async Task OnGetAsync()
         {

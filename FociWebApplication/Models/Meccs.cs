@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 namespace FociWebApplication.Models
 {
-    public class Match
+    public class Meccs
     {
         
         int id;
@@ -15,7 +15,7 @@ namespace FociWebApplication.Models
         string vendegCsapat;
         string vegEredmeny;
 
-        public Match(string[] tomb)
+        public Meccs(string[] tomb)
         {
             fordulo = int.Parse(tomb[0]);
             hazaGolok = int.Parse(tomb[1]);
@@ -25,14 +25,14 @@ namespace FociWebApplication.Models
             hazaiCsapat = tomb[5];
             vendegCsapat = tomb[6];
         }
-        public Match()
+        public Meccs()
         {
             
         }
 
         public int Id { get => id; set => id = value; }
 
-        public string VegEredmeny => HazaGolok > VendegGolok ? $"{HazaGolok}-{VendegGolok}" : $"{VendegGolok}-{HazaGolok}";
+        public string? VegEredmeny => HazaGolok > VendegGolok ? $"{HazaGolok}-{VendegGolok}" : $"{VendegGolok}-{HazaGolok}";
 
         public int Fordulo { get => fordulo; set => fordulo = value; }
         public int HazaGolok { get => hazaGolok; set => hazaGolok = value; }
@@ -41,6 +41,6 @@ namespace FociWebApplication.Models
         public int VendegElsoFelidoGolok { get => vendegElsoFelidoGolok; set => vendegElsoFelidoGolok = value; }
         public string HazaiCsapat { get => hazaiCsapat; set => hazaiCsapat = value; }
         public string VendegCsapat { get => vendegCsapat; set => vendegCsapat = value; }
-        public string VegEredmeny1 { get => vegEredmeny; set => vegEredmeny = value; }
+        //public string VegEredmeny1 { get => vegEredmeny; set => vegEredmeny = value; }
     }
 }

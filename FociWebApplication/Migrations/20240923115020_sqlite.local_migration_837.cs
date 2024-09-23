@@ -5,7 +5,7 @@
 namespace FociWebApplication.Migrations
 {
     /// <inheritdoc />
-    public partial class sqlitelocal_migration_647 : Migration
+    public partial class sqlitelocal_migration_837 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -22,8 +22,7 @@ namespace FociWebApplication.Migrations
                     HazaiElsoFelidoGolok = table.Column<int>(type: "INTEGER", nullable: false),
                     VendegElsoFelidoGolok = table.Column<int>(type: "INTEGER", nullable: false),
                     HazaiCsapat = table.Column<string>(type: "TEXT", nullable: false),
-                    VendegCsapat = table.Column<string>(type: "TEXT", nullable: false),
-                    VegEredmeny1 = table.Column<string>(type: "TEXT", nullable: false)
+                    VendegCsapat = table.Column<string>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
                 {

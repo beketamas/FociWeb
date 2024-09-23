@@ -16,7 +16,7 @@ namespace FociWebApplication.Migrations
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "8.0.8");
 
-            modelBuilder.Entity("FociWebApplication.Models.Match", b =>
+            modelBuilder.Entity("FociWebApplication.Models.Meccs", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -34,10 +34,6 @@ namespace FociWebApplication.Migrations
 
                     b.Property<int>("HazaiElsoFelidoGolok")
                         .HasColumnType("INTEGER");
-
-                    b.Property<string>("VegEredmeny1")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
 
                     b.Property<string>("VendegCsapat")
                         .IsRequired()

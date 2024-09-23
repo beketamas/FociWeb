@@ -20,7 +20,7 @@ namespace FociWebApplication.Pages
         }
 
         [BindProperty]
-        public Match Match { get; set; } = default!;
+        public Meccs Match { get; set; } = default!;
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
